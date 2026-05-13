@@ -13,7 +13,7 @@
         .accent-red { accent-color: #d9534f; }
     </style>
 </head>
-<body class="bg-gray-100 font-sans text-gray-900">
+<body class="bg-gray-50 font-sans text-gray-900">
 
     <header class="bg-white shadow-md border-b-4 border-industrial">
         <div class="max-w-5xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between">
@@ -33,76 +33,103 @@
     </header>
 
     <main class="max-w-4xl mx-auto my-10 p-6 bg-white shadow-2xl rounded-lg">
-        <form action="https://formspree.io/f/mariagne@ermpvc.co.cu" method="POST" class="space-y-8">
+        <form action="https://formspree.io/f/tu_id" method="POST" class="space-y-8">
             
             <section>
                 <h2 class="text-lg font-bold border-b-2 border-industrial mb-4 pb-1">1. Datos Generales</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <input type="text" name="Empresa" placeholder="Nombre de la Empresa" required class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
-                    <input type="text" name="Dirección" placeholder="Dirección" class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
-                    <input type="tel" name="Teléfono" placeholder="Teléfono" class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
-                    <input type="email" name="_replyto" placeholder="E-Mail del cliente" required class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
-                    <input type="text" name="Periodo" placeholder="Periodo Evaluado" class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
-                    <input type="text" name="Representante" placeholder="Nombre del Representante" class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
+                    <input type="text" name="empresa" placeholder="Nombre de la Empresa" required class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
+                    <input type="text" name="direccion" placeholder="Dirección" class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
+                    <input type="tel" name="telefono" placeholder="Teléfono" class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
+                    <input type="email" name="email" placeholder="E-Mail" required class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
+                    <input type="text" name="periodo" placeholder="Periodo Evaluado" class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
+                    <input type="text" name="representante" placeholder="Nombre del Representante" class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
                 </div>
             </section>
 
             <section>
                 <h2 class="text-lg font-bold border-b-2 border-industrial mb-4 pb-1">2. Productos Recibidos</h2>
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
-                    <label class="flex items-center space-x-2"><input type="checkbox" name="Producto" value="Ferroso" class="accent-red"> <span>Ferroso</span></label>
-                    <label class="flex items-center space-x-2"><input type="checkbox" name="Producto" value="No Ferroso" class="accent-red"> <span>No Ferroso</span></label>
-                    <label class="flex items-center space-x-2"><input type="checkbox" name="Producto" value="No Metálico" class="accent-red"> <span>No Metálico</span></label>
-                    <label class="flex items-center space-x-2"><input type="checkbox" name="Producto" value="Plástico" class="accent-red"> <span>Plástico</span></label>
-                    <label class="flex items-center space-x-2"><input type="checkbox" name="Producto" value="Servicio" class="accent-red"> <span>Servicio</span></label>
-                    <label class="flex items-center space-x-2"><input type="checkbox" name="Producto" value="Otros" class="accent-red"> <span>Otros</span></label>
+                    <label class="flex items-center space-x-2"><input type="checkbox" name="prod" value="Ferroso" class="accent-red"> <span>Ferroso</span></label>
+                    <label class="flex items-center space-x-2"><input type="checkbox" name="prod" value="No Ferroso" class="accent-red"> <span>No Ferroso</span></label>
+                    <label class="flex items-center space-x-2"><input type="checkbox" name="prod" value="No Metálico" class="accent-red"> <span>No Metálico</span></label>
+                    <label class="flex items-center space-x-2"><input type="checkbox" name="prod" value="Plástico" class="accent-red"> <span>Plástico</span></label>
+                    <label class="flex items-center space-x-2"><input type="checkbox" name="prod" value="Servicio" class="accent-red"> <span>Servicio</span></label>
+                    <label class="flex items-center space-x-2"><input type="checkbox" name="prod" value="Otros" class="accent-red"> <span>Otros</span></label>
                 </div>
             </section>
 
             <section class="overflow-x-auto">
-                <h2 class="text-lg font-bold border-b-2 border-industrial mb-4 pb-1">3. Evaluación (1-5)</h2>
+                <h2 class="text-lg font-bold border-b-2 border-industrial mb-4 pb-1">3. Evaluación (1 = Pobre, 5 = Excelente)</h2>
                 <table class="w-full text-left border-collapse">
                     <thead>
-                        <tr class="bg-gray-100 text-xs">
+                        <tr class="bg-gray-100 uppercase text-xs">
                             <th class="p-3 border">Indicadores</th>
-                            <th class="p-3 border text-center">1</th><th class="p-3 border text-center">2</th><th class="p-3 border text-center">3</th><th class="p-3 border text-center">4</th><th class="p-3 border text-center">5</th>
+                            <th class="p-3 border text-center">1</th>
+                            <th class="p-3 border text-center">2</th>
+                            <th class="p-3 border text-center">3</th>
+                            <th class="p-3 border text-center">4</th>
+                            <th class="p-3 border text-center">5</th>
                         </tr>
                     </thead>
                     <tbody class="text-sm">
                         <tr>
                             <td class="p-3 border font-medium">Atenciones y Comunicación</td>
-                            <td colspan="5" class="p-3 border"><div class="flex justify-around">
-                                <input type="radio" name="Atencion" value="1" required class="accent-red">
-                                <input type="radio" name="Atencion" value="2" class="accent-red">
-                                <input type="radio" name="Atencion" value="3" class="accent-red">
-                                <input type="radio" name="Atencion" value="4" class="accent-red">
-                                <input type="radio" name="Atencion" value="5" class="accent-red">
-                            </div></td>
+                            <td colspan="5" class="p-3 border text-center">
+                                <div class="flex justify-around">
+                                    <input type="radio" name="eval_atencion" value="1" required class="accent-red">
+                                    <input type="radio" name="eval_atencion" value="2" class="accent-red">
+                                    <input type="radio" name="eval_atencion" value="3" class="accent-red">
+                                    <input type="radio" name="eval_atencion" value="4" class="accent-red">
+                                    <input type="radio" name="eval_atencion" value="5" class="accent-red">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="p-3 border font-medium">Tiempo de respuesta a ofertas</td>
+                            <td colspan="5" class="p-3 border text-center">
+                                <div class="flex justify-around">
+                                    <input type="radio" name="eval_tiempo" value="1" required class="accent-red">
+                                    <input type="radio" name="eval_tiempo" value="2" class="accent-red">
+                                    <input type="radio" name="eval_tiempo" value="3" class="accent-red">
+                                    <input type="radio" name="eval_tiempo" value="4" class="accent-red">
+                                    <input type="radio" name="eval_tiempo" value="5" class="accent-red">
+                                </div>
+                            </td>
                         </tr>
                         <tr>
-                            <td class="p-3 border font-medium">Calidad y Puntualidad</td>
-                            <td colspan="5" class="p-3 border"><div class="flex justify-around">
-                                <input type="radio" name="Calidad" value="1" required class="accent-red">
-                                <input type="radio" name="Calidad" value="2" class="accent-red">
-                                <input type="radio" name="Calidad" value="3" class="accent-red">
-                                <input type="radio" name="Calidad" value="4" class="accent-red">
-                                <input type="radio" name="Calidad" value="5" class="accent-red">
-                            </div></td>
+                            <td class="p-3 border font-medium">Cumplimiento de contratos</td>
+                            <td colspan="5" class="p-3 border text-center">
+                                <div class="flex justify-around">
+                                    <input type="radio" name="eval_contrato" value="1" required class="accent-red">
+                                    <input type="radio" name="eval_contrato" value="2" class="accent-red">
+                                    <input type="radio" name="eval_contrato" value="3" class="accent-red">
+                                    <input type="radio" name="eval_contrato" value="4" class="accent-red">
+                                    <input type="radio" name="eval_contrato" value="5" class="accent-red">
+                                </div>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
             </section>
 
             <section class="space-y-4">
-                <label class="block font-bold">¿Qué debe mejorar?</label>
-                <textarea name="Sugerencias" rows="3" class="w-full p-2 border border-gray-300 rounded"></textarea>
-                
-                <input type="hidden" name="_next" value="https://tu-usuario.github.io/tu-repo/gracias.html">
-                <input type="hidden" name="_subject" value="Nueva Encuesta de Satisfacción Recibida">
+                <div>
+                    <label class="block font-bold mb-2">¿Qué debe mejorar en nuestra Empresa?</label>
+                    <textarea name="mejoras" rows="3" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none" placeholder="Escriba aquí sus sugerencias..."></textarea>
+                </div>
+                <div>
+                    <label class="block font-bold mb-2">Atención a Quejas:</label>
+                    <div class="flex space-x-4">
+                        <label class="flex items-center space-x-1"><input type="radio" name="quejas" value="Buena" class="accent-red"> <span>Buena</span></label>
+                        <label class="flex items-center space-x-1"><input type="radio" name="quejas" value="Regular" class="accent-red"> <span>Regular</span></label>
+                        <label class="flex items-center space-x-1"><input type="radio" name="quejas" value="Mala" class="accent-red"> <span>Mala</span></label>
+                    </div>
+                </div>
             </section>
 
             <div class="text-center">
-                <button type="submit" class="bg-industrial hover:bg-blue-800 text-white font-bold py-3 px-8 rounded-lg shadow-lg">
+                <button type="submit" class="bg-industrial hover:bg-blue-800 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition duration-300 transform hover:scale-105">
                     ENVIAR ENCUESTA
                 </button>
             </div>
@@ -110,7 +137,9 @@
     </main>
 
     <footer class="text-center pb-10 text-gray-500 text-sm">
-        <p>© 2026 Empresa de Recuperación de Materias Primas Villa Clara | ¡Recuperamos VALORES!</p>
+        <p>© 2026 Empresa de Recuperación de Materias Primas Villa Clara</p>
+        <p>¡Recuperamos VALORES!</p>
     </footer>
+
 </body>
 </html>
