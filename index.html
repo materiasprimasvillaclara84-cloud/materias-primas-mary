@@ -36,49 +36,33 @@
     <!-- Formspree integration -->
     <form action="https://formspree.io/f/xrejwnpy" method="POST" class="space-y-8">
       
+      <!-- Datos Generales -->
       <section>
         <h2 class="text-lg font-bold border-b-2 border-industrial mb-4 pb-1">1. Datos Generales</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <label>
-            <span class="block font-bold">Nombre de la Empresa</span>
-            <input type="text" name="empresa" required class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
-          </label>
-          <label>
-            <span class="block font-bold">Dirección</span>
-            <input type="text" name="direccion" class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
-          </label>
-          <label>
-            <span class="block font-bold">Teléfono</span>
-            <input type="tel" name="telefono" pattern="[0-9+ ]+" class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
-          </label>
-          <label>
-            <span class="block font-bold">E-Mail</span>
-            <input type="email" name="email" required class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
-          </label>
-          <label>
-            <span class="block font-bold">Periodo Evaluado</span>
-            <input type="month" name="periodo" class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
-          </label>
-          <label>
-            <span class="block font-bold">Nombre del Representante</span>
-            <input type="text" name="representante" class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
-          </label>
+          <input type="text" name="empresa" placeholder="Nombre de la Empresa" required class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
+          <input type="text" name="direccion" placeholder="Dirección" class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
+          <input type="tel" name="telefono" placeholder="Teléfono" class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
+          <input type="email" name="email" placeholder="E-Mail" required class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
+          <input type="text" name="periodo" placeholder="Periodo Evaluado" class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
+          <input type="text" name="representante" placeholder="Nombre del Representante" class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
         </div>
       </section>
 
+      <!-- Productos Recibidos -->
       <section>
         <h2 class="text-lg font-bold border-b-2 border-industrial mb-4 pb-1">2. Productos Recibidos</h2>
-        <fieldset class="grid grid-cols-2 md:grid-cols-3 gap-3">
-          <legend class="sr-only">Seleccione los productos recibidos</legend>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
           <label class="flex items-center space-x-2"><input type="checkbox" name="prod" value="Ferroso" class="accent-red"> <span>Ferroso</span></label>
           <label class="flex items-center space-x-2"><input type="checkbox" name="prod" value="No Ferroso" class="accent-red"> <span>No Ferroso</span></label>
           <label class="flex items-center space-x-2"><input type="checkbox" name="prod" value="No Metálico" class="accent-red"> <span>No Metálico</span></label>
           <label class="flex items-center space-x-2"><input type="checkbox" name="prod" value="Plástico" class="accent-red"> <span>Plástico</span></label>
           <label class="flex items-center space-x-2"><input type="checkbox" name="prod" value="Servicio" class="accent-red"> <span>Servicio</span></label>
           <label class="flex items-center space-x-2"><input type="checkbox" name="prod" value="Otros" class="accent-red"> <span>Otros</span></label>
-        </fieldset>
+        </div>
       </section>
 
+      <!-- Evaluación -->
       <section class="overflow-x-auto">
         <h2 class="text-lg font-bold border-b-2 border-industrial mb-4 pb-1">3. Evaluación (1 = Pobre, 5 = Excelente)</h2>
         <table class="w-full text-left border-collapse">
@@ -111,4 +95,8 @@
             </tr>
             <tr>
               <td class="p-3 border font-medium">Cumplimiento de contratos</td>
-              <td class="p-3 border text-center"><input type="radio" name="eval_contrato" value="1" required class="accent-red"></
+              <td class="p-3 border text-center"><input type="radio" name="eval_contrato" value="1" required class="accent-red"></td>
+              <td class="p-3 border text-center"><input type="radio" name="eval_contrato" value="2" class="accent-red"></td>
+              <td class="p-3 border text-center"><input type="radio" name="eval_contrato" value="3" class="accent-red"></td>
+              <td class="p-3 border text-center"><input type="radio" name="eval_contrato" value="4" class="accent-red"></td>
+              <td class="p-3 border text-center"><input type="radio"
