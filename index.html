@@ -1,102 +1,145 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Encuesta de Satisfacción - ERMP Villa Clara</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .bg-industrial { background-color: #0056b3; }
-    .text-industrial { color: #0056b3; }
-    .border-industrial { border-color: #0056b3; }
-    .bg-vibrant-red { background-color: #d9534f; }
-    .accent-red { accent-color: #d9534f; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Satisfacción - ERMP Villa Clara</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bg-industrial { background-color: #0056b3; }
+        .text-industrial { color: #0056b3; }
+        .border-industrial { border-color: #0056b3; }
+        .bg-vibrant-red { background-color: #d9534f; }
+        .accent-red { accent-color: #d9534f; }
+    </style>
 </head>
 <body class="bg-gray-50 font-sans text-gray-900">
 
-  <header class="bg-white shadow-md border-b-4 border-industrial">
-    <div class="max-w-5xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between">
-      <div class="flex items-center space-x-4">
-        <div class="w-16 h-16 rounded-full border-4 border-t-blue-600 border-r-red-500 border-b-blue-600 border-l-red-500 flex items-center justify-center font-bold text-xs text-center p-1">
-          ERMP VC
+    <header class="bg-white shadow-md border-b-4 border-industrial">
+        <div class="max-w-5xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <div class="w-16 h-16 rounded-full border-4 border-t-blue-600 border-r-red-500 border-b-blue-600 border-l-red-500 flex items-center justify-center font-bold text-xs text-center p-1">
+                    ERMP VC
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold text-industrial leading-tight">Empresa de Recuperación de Materias Primas Villa Clara</h1>
+                    <p class="text-sm italic text-gray-600">"Materia Prima Recuperada | Comprometidos con el Medio Ambiente"</p>
+                </div>
+            </div>
+            <div class="mt-4 md:mt-0 text-center md:text-right">
+                <span class="bg-vibrant-red text-white px-3 py-1 rounded-full text-sm font-bold uppercase tracking-widest">¡Recuperamos VALORES!</span>
+            </div>
         </div>
-        <div>
-          <h1 class="text-xl font-bold text-industrial leading-tight">Empresa de Recuperación de Materias Primas Villa Clara</h1>
-          <p class="text-sm italic text-gray-600">"Materia Prima Recuperada | Comprometidos con el Medio Ambiente"</p>
-        </div>
-      </div>
-      <div class="mt-4 md:mt-0 text-center md:text-right">
-        <span class="bg-vibrant-red text-white px-3 py-1 rounded-full text-sm font-bold uppercase tracking-widest">¡Recuperamos VALORES!</span>
-      </div>
-    </div>
-  </header>
+    </header>
 
-  <main class="max-w-4xl mx-auto my-10 p-6 bg-white shadow-2xl rounded-lg">
-    <!-- Formspree integration -->
-    <form action="https://formspree.io/f/xrejwnpy" method="POST" class="space-y-8">
-      
-      <!-- Datos Generales -->
-      <section>
-        <h2 class="text-lg font-bold border-b-2 border-industrial mb-4 pb-1">1. Datos Generales</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <input type="text" name="empresa" placeholder="Nombre de la Empresa" required class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
-          <input type="text" name="direccion" placeholder="Dirección" class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
-          <input type="tel" name="telefono" placeholder="Teléfono" class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
-          <input type="email" name="email" placeholder="E-Mail" required class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
-          <input type="text" name="periodo" placeholder="Periodo Evaluado" class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
-          <input type="text" name="representante" placeholder="Nombre del Representante" class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
-        </div>
-      </section>
+    <main class="max-w-4xl mx-auto my-10 p-6 bg-white shadow-2xl rounded-lg">
+        <form action="https://formspree.io/f/marianlymoralesmart@gmail.com" method="POST">
+            
+            <section>
+                <h2 class="text-lg font-bold border-b-2 border-industrial mb-4 pb-1">1. Datos Generales</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <input type="text" name="empresa" placeholder="Nombre de la Empresa" required class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
+                    <input type="text" name="direccion" placeholder="Dirección" class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
+                    <input type="tel" name="telefono" placeholder="Teléfono" class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
+                    <input type="email" name="email" placeholder="E-Mail" required class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
+                    <input type="text" name="periodo" placeholder="Periodo Evaluado" class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
+                    <input type="text" name="representante" placeholder="Nombre del Representante" class="p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none">
+                </div>
+            </section>
 
-      <!-- Productos Recibidos -->
-      <section>
-        <h2 class="text-lg font-bold border-b-2 border-industrial mb-4 pb-1">2. Productos Recibidos</h2>
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
-          <label class="flex items-center space-x-2"><input type="checkbox" name="prod" value="Ferroso" class="accent-red"> <span>Ferroso</span></label>
-          <label class="flex items-center space-x-2"><input type="checkbox" name="prod" value="No Ferroso" class="accent-red"> <span>No Ferroso</span></label>
-          <label class="flex items-center space-x-2"><input type="checkbox" name="prod" value="No Metálico" class="accent-red"> <span>No Metálico</span></label>
-          <label class="flex items-center space-x-2"><input type="checkbox" name="prod" value="Plástico" class="accent-red"> <span>Plástico</span></label>
-          <label class="flex items-center space-x-2"><input type="checkbox" name="prod" value="Servicio" class="accent-red"> <span>Servicio</span></label>
-          <label class="flex items-center space-x-2"><input type="checkbox" name="prod" value="Otros" class="accent-red"> <span>Otros</span></label>
-        </div>
-      </section>
+            <section class="mt-8">
+                <h2 class="text-lg font-bold border-b-2 border-industrial mb-4 pb-1">2. Productos Recibidos</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                    <label class="flex items-center space-x-2"><input type="checkbox" name="prod_ferroso" value="Sí" class="accent-red"> <span>Ferroso</span></label>
+                    <label class="flex items-center space-x-2"><input type="checkbox" name="prod_no_ferroso" value="Sí" class="accent-red"> <span>No Ferroso</span></label>
+                    <label class="flex items-center space-x-2"><input type="checkbox" name="prod_no_metalico" value="Sí" class="accent-red"> <span>No Metálico</span></label>
+                    <label class="flex items-center space-x-2"><input type="checkbox" name="prod_plastico" value="Sí" class="accent-red"> <span>Plástico</span></label>
+                    <label class="flex items-center space-x-2"><input type="checkbox" name="prod_servicio" value="Sí" class="accent-red"> <span>Servicio</span></label>
+                    <label class="flex items-center space-x-2"><input type="checkbox" name="prod_otros" value="Sí" class="accent-red"> <span>Otros</span></label>
+                </div>
+            </section>
 
-      <!-- Evaluación -->
-      <section class="overflow-x-auto">
-        <h2 class="text-lg font-bold border-b-2 border-industrial mb-4 pb-1">3. Evaluación (1 = Pobre, 5 = Excelente)</h2>
-        <table class="w-full text-left border-collapse">
-          <thead>
-            <tr class="bg-gray-100 uppercase text-xs">
-              <th class="p-3 border">Indicadores</th>
-              <th class="p-3 border text-center">1</th>
-              <th class="p-3 border text-center">2</th>
-              <th class="p-3 border text-center">3</th>
-              <th class="p-3 border text-center">4</th>
-              <th class="p-3 border text-center">5</th>
-            </tr>
-          </thead>
-          <tbody class="text-sm">
-            <tr>
-              <td class="p-3 border font-medium">Atenciones y Comunicación</td>
-              <td class="p-3 border text-center"><input type="radio" name="eval_atencion" value="1" required class="accent-red"></td>
-              <td class="p-3 border text-center"><input type="radio" name="eval_atencion" value="2" class="accent-red"></td>
-              <td class="p-3 border text-center"><input type="radio" name="eval_atencion" value="3" class="accent-red"></td>
-              <td class="p-3 border text-center"><input type="radio" name="eval_atencion" value="4" class="accent-red"></td>
-              <td class="p-3 border text-center"><input type="radio" name="eval_atencion" value="5" class="accent-red"></td>
-            </tr>
-            <tr class="bg-gray-50">
-              <td class="p-3 border font-medium">Tiempo de respuesta a ofertas</td>
-              <td class="p-3 border text-center"><input type="radio" name="eval_tiempo" value="1" required class="accent-red"></td>
-              <td class="p-3 border text-center"><input type="radio" name="eval_tiempo" value="2" class="accent-red"></td>
-              <td class="p-3 border text-center"><input type="radio" name="eval_tiempo" value="3" class="accent-red"></td>
-              <td class="p-3 border text-center"><input type="radio" name="eval_tiempo" value="4" class="accent-red"></td>
-              <td class="p-3 border text-center"><input type="radio" name="eval_tiempo" value="5" class="accent-red"></td>
-            </tr>
-            <tr>
-              <td class="p-3 border font-medium">Cumplimiento de contratos</td>
-              <td class="p-3 border text-center"><input type="radio" name="eval_contrato" value="1" required class="accent-red"></td>
-              <td class="p-3 border text-center"><input type="radio" name="eval_contrato" value="2" class="accent-red"></td>
-              <td class="p-3 border text-center"><input type="radio" name="eval_contrato" value="3" class="accent-red"></td>
-              <td class="p-3 border text-center"><input type="radio" name="eval_contrato" value="4" class="accent-red"></td>
-              <td class="p-3 border text-center"><input type="radio"
+            <section class="overflow-x-auto mt-8">
+                <h2 class="text-lg font-bold border-b-2 border-industrial mb-4 pb-1">3. Evaluación (1 = Pobre, 5 = Excelente)</h2>
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-gray-100 uppercase text-xs">
+                            <th class="p-3 border">Indicadores</th>
+                            <th class="p-3 border text-center">1</th>
+                            <th class="p-3 border text-center">2</th>
+                            <th class="p-3 border text-center">3</th>
+                            <th class="p-3 border text-center">4</th>
+                            <th class="p-3 border text-center">5</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm">
+                        <tr>
+                            <td class="p-3 border font-medium">Atenciones y Comunicación</td>
+                            <td colspan="5" class="p-3 border text-center">
+                                <div class="flex justify-around">
+                                    <input type="radio" name="eval_atencion" value="1" required class="accent-red">
+                                    <input type="radio" name="eval_atencion" value="2" class="accent-red">
+                                    <input type="radio" name="eval_atencion" value="3" class="accent-red">
+                                    <input type="radio" name="eval_atencion" value="4" class="accent-red">
+                                    <input type="radio" name="eval_atencion" value="5" class="accent-red">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="p-3 border font-medium">Tiempo de respuesta a ofertas</td>
+                            <td colspan="5" class="p-3 border text-center">
+                                <div class="flex justify-around">
+                                    <input type="radio" name="eval_tiempo" value="1" required class="accent-red">
+                                    <input type="radio" name="eval_tiempo" value="2" class="accent-red">
+                                    <input type="radio" name="eval_tiempo" value="3" class="accent-red">
+                                    <input type="radio" name="eval_tiempo" value="4" class="accent-red">
+                                    <input type="radio" name="eval_tiempo" value="5" class="accent-red">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 border font-medium">Cumplimiento de contratos</td>
+                            <td colspan="5" class="p-3 border text-center">
+                                <div class="flex justify-around">
+                                    <input type="radio" name="eval_contrato" value="1" required class="accent-red">
+                                    <input type="radio" name="eval_contrato" value="2" class="accent-red">
+                                    <input type="radio" name="eval_contrato" value="3" class="accent-red">
+                                    <input type="radio" name="eval_contrato" value="4" class="accent-red">
+                                    <input type="radio" name="eval_contrato" value="5" class="accent-red">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="space-y-4 mt-8">
+                <div>
+                    <label class="block font-bold mb-2">¿Qué debe mejorar en nuestra Empresa?</label>
+                    <textarea name="mejoras" rows="3" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-industrial outline-none" placeholder="Escriba aquí sus sugerencias..."></textarea>
+                </div>
+                <div>
+                    <label class="block font-bold mb-2">Atención a Quejas:</label>
+                    <div class="flex space-x-4">
+                        <label class="flex items-center space-x-1"><input type="radio" name="quejas" value="Buena" class="accent-red"> <span>Buena</span></label>
+                        <label class="flex items-center space-x-1"><input type="radio" name="quejas" value="Regular" class="accent-red"> <span>Regular</span></label>
+                        <label class="flex items-center space-x-1"><input type="radio" name="quejas" value="Mala" class="accent-red"> <span>Mala</span></label>
+                    </div>
+                </div>
+            </section>
+
+            <div class="text-center mt-10">
+                <button type="submit" class="bg-industrial hover:bg-blue-800 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition duration-300 transform hover:scale-105">
+                    ENVIAR ENCUESTA
+                </button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="text-center pb-10 text-gray-500 text-sm">
+        <p>© 2026 Empresa de Recuperación de Materias Primas Villa Clara</p>
+        <p>¡Recuperamos VALORES!</p>
+    </footer>
+
+</body>
+</html>
